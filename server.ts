@@ -1,6 +1,5 @@
 // Useful resource: how to set up TS with Node and Express: https://dev.to/cristain/how-to-set-up-typescript-with-nodejs-and-express-2023-gf
-import express, { Express, Request, Response, Application } from 'express';
-import dotenv from 'dotenv';
+import express, { Request, Response, Application } from 'express';
 
 require('dotenv').config();
 const cors = require('cors');
