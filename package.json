@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc",
     "start": "node dist/index.js",
-    "dev": "nodemon src/index.ts"
+    "dev": "nodemon src/index.ts",
+    "db:create": "psql -U admin -d barbouille -f src/data/create_db.sql",
+    "db:seed": "psql -U admin -d barbouille -f src/data/seed_db.sql",
+    "db:reset": "npm run db:create && npm run db:seed"
   },
   "keywords": [
     "nodejs",
