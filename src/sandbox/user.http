@@ -1,0 +1,18 @@
+### CREATE USER
+POST http://localhost:8000/api/signup
+Content-Type: application/json
+
+{
+  "firstName": "toto",
+  "email": "toto@mail.com",
+  "password": "mySuperPassword@123"
+}
+
+### LOGIN
+POST http://localhost:8000/api/login
+Content-Type: application/json
+
+{
+  "email": "toto@mail.com",
+  "password": "mySuperPassword@123"
+}
